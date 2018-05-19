@@ -17,6 +17,4 @@ public abstract class Car implements Vehicle {
 
     public abstract void openDoors();
     public abstract void closeDoors();
-
-
 }

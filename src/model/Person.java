@@ -1,7 +1,6 @@
 package model;
 
 import com.db4o.config.annotations.Indexed;
-import com.db4o.types.Db4oList;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,7 +16,6 @@ public class Person {
     private Date birthday;
     private Address address;
     private List<Vehicle> vehicles;
-    Db4oList ve;
 
     public Person(String name, Date birthday, Address address) {
         this.name = name;
@@ -31,6 +29,9 @@ public class Person {
     public Person() {
     }
 
+    public Person(String name) {
+        this.name = name;
+    }
 
     public void addVehicle(Vehicle vehicle) {
         vehicles.add(vehicle);
